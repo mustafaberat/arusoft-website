@@ -1,6 +1,5 @@
 import React from "react";
 
-import SocialMedia from "../components/SocialMedia";
 import MailForHomePage from "../components/MailForHomePage";
 
 const HomePageSection = () => {
