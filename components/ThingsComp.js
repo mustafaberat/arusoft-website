@@ -7,10 +7,15 @@ import MyHead from "../components/MyHead";
 export const projects = {
   websites: [
     {
-      //TODO: seperate websites, mobile apps, etc.
+      title: "Random Finger Picker Mobile Game",
+      image:
+        "https://raw.githubusercontent.com/mustafaberat/arusoft-website/refs/heads/main/public/img/clickbattle.jpg", //TODO: change it
+      url: "https://play.google.com/store/apps/details?id=com.arusoft.randomfingerpicker",
+    },
+    {
       title: "Click Battle Mobile Game",
       image:
-        "https://raw.githubusercontent.com/mustafaberat/personal-website-1/refs/heads/master/public/img/output.PNG", //TODO: change it
+        "https://raw.githubusercontent.com/mustafaberat/arusoft-website/refs/heads/main/public/img/clickbattle.jpg",
       url: "https://play.google.com/store/apps/details?id=com.arusoft.clickbattle",
     },
     {
