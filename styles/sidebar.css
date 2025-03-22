@@ -1,0 +1,22 @@
+.sidebardiv {
+  width: 100%;
+  display: none;
+}
+
+.sidebar-menu-btn {
+  width: var(--fingerSize);
+  height: var(--fingerSize);
+  cursor: pointer;
+  background-color: inherit;
+  margin-left: auto;
+}
+
+.sidebar-menu-btn i {
+  color: var(--blue);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}

@@ -1,0 +1,55 @@
+.things {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 40px 50px;
+}
+
+.thingsCard {
+  height: 300px;
+  margin: 0 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  position: relative;
+  border: 1px solid var(--grey);
+  border-radius: var(--borderRadius);
+}
+
+.thingsCard a {
+  position: absolute;
+  color: var(--blue);
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+.thingsCard a:hover {
+  color: var(--white);
+  transition: 0.2s;
+  background-color: rgba(58, 142, 232, 0.4);
+}
+
+.thingsCard img {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: grayscale(80%);
+  opacity: 0.15;
+}
+
+.things-titlediv {
+  margin-bottom: 10px;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}

@@ -1,0 +1,13 @@
+:root {
+  --black: #03061c;
+  --grey: #babdc4;
+  --blue: #3a8ee8;
+  --yellow: rgb(235, 176, 76);
+  --white: #fffde1;
+  --maxWidth: 1200px;
+  --fingerSize: 40px;
+  --gutter: 20px;
+  --halfgutter: 10px;
+  --headerLogoSize: 40px;
+  --borderRadius: 4px;
+}
