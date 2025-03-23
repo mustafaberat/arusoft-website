@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Arusoft - Professional Software Solutions</title>
-        <meta name="description" content="Arusoft provides professional software development services including web development, mobile apps, and custom solutions." />
-        <link rel="icon" href="/favicon.ico" />
+        <title>ARU SOFT</title>
+        <meta name="description" content="ARU Soft provides professional software development services including web development, mobile apps, and custom solutions." />
+        <link rel="icon" href="/aru.png" />
       </Head>
       <div className="min-h-screen bg-white">
         <Header />
