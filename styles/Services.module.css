@@ -1,17 +1,17 @@
 .servicesSection {
-  padding: 6rem 2rem;
+  padding: 6rem var(--spacing-lg);
   background-color: #f8fafc;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
 }
 
 .sectionTitle {
   font-size: 2.5rem;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-dark);
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -19,15 +19,15 @@
 .servicesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: var(--spacing-lg);
 }
 
 .serviceCard {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
 }
 
 .serviceCard:hover {
@@ -38,11 +38,11 @@
   width: 60px;
   height: 60px;
   background-color: #f1f5f9;
-  border-radius: 12px;
+  border-radius: var(--border-radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-md);
 }
 
 .icon {
@@ -51,20 +51,20 @@
 
 .serviceTitle {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-sm);
 }
 
 .serviceDescription {
   font-size: 1rem;
   color: #666;
-  line-height: 1.6;
+  line-height: var(--line-height);
 }
 
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   .servicesSection {
-    padding: 4rem 1rem;
+    padding: 4rem var(--spacing-sm);
   }
 
   .sectionTitle {

@@ -1,17 +1,17 @@
 .projectsSection {
-  padding: 6rem 2rem;
-  background-color: #ffffff;
+  padding: 6rem var(--spacing-lg);
+  background-color: var(--color-white);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
 }
 
 .sectionTitle {
   font-size: 2.5rem;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-dark);
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -22,9 +22,9 @@
 
 .categoryTitle {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   color: #333;
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-lg);
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #f0f0f0;
 }
@@ -32,20 +32,20 @@
 .projectGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: var(--spacing-lg);
 }
 
 .projectCard {
-  background: #ffffff;
-  border-radius: 12px;
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .projectCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-lg);
 }
 
 .projectImage {
@@ -58,7 +58,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-fast);
 }
 
 .projectCard:hover .projectImage img {
@@ -66,27 +66,27 @@
 }
 
 .projectContent {
-  padding: 1.5rem;
+  padding: var(--spacing-md);
 }
 
 .projectContent h4 {
   font-size: 1.25rem;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-dark);
   margin-bottom: 0.5rem;
 }
 
 .projectContent p {
   font-size: 0.95rem;
   color: #666;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  line-height: var(--line-height);
+  margin-bottom: var(--spacing-sm);
 }
 
 .technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--spacing-xs);
 }
 
 .techTag {
@@ -97,9 +97,9 @@
   font-size: 0.85rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   .projectsSection {
-    padding: 4rem 1rem;
+    padding: 4rem var(--spacing-sm);
   }
 
   .sectionTitle {
