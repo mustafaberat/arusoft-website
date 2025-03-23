@@ -15,7 +15,7 @@ const Footer = () => {
 
         <div className={styles.bottom}>
           <p className={styles.copyright}>
-            © {new Date().getFullYear()} Arusoft
+            © {new Date().getFullYear()} ARU SOFT
           </p>
         </div>
       </div>

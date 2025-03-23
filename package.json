@@ -16,6 +16,7 @@
     "review:fix": "npm-run-all clean lint:fix format && npm run build"
   },
   "dependencies": {
+    "framer-motion": "^12.5.0",
     "next": "^15.0.2",
     "react": "latest",
     "react-dom": "latest",
