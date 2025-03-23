@@ -1,14 +1,2 @@
-@import "./formalize.css";
-@import "./normalize.css";
-
 @import url("https://fonts.googleapis.com/css?family=Exo:300,400&display=swap"); /* FONT */
 
-@import "./variables.css";
-@import "./global.css";
-@import "./header.css";
-@import "./sidebar.css";
-@import "./section.css";
-@import "./name-and-title.css";
-@import "./things.css";
-
-@import "./devices.css";
