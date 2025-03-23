@@ -4,70 +4,61 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: var(--spacing-lg);
+  padding: 5% 3%;
   background: linear-gradient(135deg, var(--color-white) 0%, #f8fafc 100%);
   overflow: hidden;
   text-align: center;
 }
 
 .heroContent {
-  max-width: 1000px;
+  width: 92%;
+  max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
   position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem 0;
 }
 
 .brandContainer {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 .brandName {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
-  letter-spacing: 2px;
-}
-
-.mainContent {
-  max-width: 800px;
-  margin-bottom: 4rem;
-  text-align: center;
+  letter-spacing: 0.15em;
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 1.5rem;
   color: #1e293b;
-}
-
-.highlight {
-  color: var(--color-text);
-  display: block;
-  font-size: 2.5rem;
-  margin-top: 0.5rem;
+  width: 100%;
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
   color: #64748b;
-  margin-bottom: 2.5rem;
-  line-height: var(--line-height);
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  width: 90%;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .ctaContainer {
   display: flex;
-  gap: var(--spacing-sm);
-  margin-bottom: 4rem;
+  gap: 1.5rem;
+  margin: 0 0 4rem;
   justify-content: center;
+  width: 90%;
+  max-width: 500px;
 }
 
 .primaryButton {
@@ -95,33 +86,33 @@
 .statsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-lg);
-  margin-top: 4rem;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .statItem {
   background: var(--color-white);
-  padding: var(--spacing-lg);
-  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  border-radius: 1rem;
   text-align: center;
-  box-shadow: var(--shadow-md);
-  transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
 .statNumber {
   display: block;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 3vw, 2.5rem);
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .statLabel {
   color: #64748b;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  line-height: 1.4;
 }
 
 .heroImage {
@@ -159,35 +150,215 @@
 
 @media (max-width: var(--breakpoint-md)) {
   .heroSection {
-    padding: var(--spacing-sm);
+    padding: calc(var(--header-height) + 3rem) 4% 4%;
+    min-height: 95vh;
+    justify-content: flex-start;
+  }
+
+  .heroContent {
+    width: 100%;
+    padding-top: 2rem;
   }
 
   .title {
-    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 
-  .highlight {
-    font-size: 2rem;
+  .subtitle {
+    margin-bottom: 2.5rem;
+    width: 90%;
   }
 
   .statsContainer {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .ctaContainer {
+    margin: 0 0 3rem;
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 0.875rem 1.75rem;
+    font-size: 1rem;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+  .heroSection {
+    padding: calc(var(--header-height) + 2rem) 4% 3rem;
+  }
+
+  .heroContent {
+    padding-top: 1.5rem;
+  }
+
+  .title {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    margin-bottom: 2rem;
+    width: 92%;
   }
 
   .ctaContainer {
     flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    width: 85%;
+    margin: 0 0 2.5rem;
   }
 
   .primaryButton,
   .secondaryButton {
     width: 100%;
-    max-width: 300px;
+    padding: 0.875rem;
+    font-size: 1rem;
+    min-width: unset;
   }
 
-  .heroImage {
+  .statsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .statItem {
+    padding: 1.25rem;
+  }
+
+  .statNumber {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .statLabel {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .heroSection {
+    padding: calc(var(--header-height) + 2rem) 5% 3rem;
+  }
+
+  .heroContent {
+    padding-top: 1.5rem;
     width: 100%;
-    opacity: 0.05;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    width: 95%;
+  }
+
+  .ctaContainer {
+    width: 95%;
+    margin: 0 0 2.5rem;
+    gap: 1.25rem;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 1rem;
+    font-size: 1rem;
+    min-height: 48px;
+  }
+
+  .statsContainer {
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .statItem {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .statNumber {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .statLabel {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 360px) {
+  .heroSection {
+    padding: calc(var(--header-height) + 1.5rem) 4% 2.5rem;
+  }
+
+  .heroContent {
+    width: 100%;
+    padding-top: 1.25rem;
+  }
+
+  .brandName {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    width: 100%;
+  }
+
+  .ctaContainer {
+    width: 100%;
+    margin: 0 0 2.5rem;
+    gap: 1rem;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 0.875rem;
+    font-size: 0.95rem;
+    min-height: 44px;
+  }
+
+  .statsContainer {
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .statItem {
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+  }
+
+  .statNumber {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .statLabel {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 } 

@@ -19,8 +19,15 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className={styles.brandName}>ARU SOFT</span>
+          <motion.span 
+            className={styles.brandName}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            ARU SOFT
+          </motion.span>
         </motion.div>
+        
         <motion.h1 
           className={styles.title}
           initial={{ opacity: 0, y: 20 }}
@@ -29,6 +36,7 @@ const Hero = () => {
         >
           From Vision to Code
         </motion.h1>
+        
         <motion.p 
           className={styles.subtitle}
           initial={{ opacity: 0, y: 20 }}
@@ -37,6 +45,7 @@ const Hero = () => {
         >
           Your ideas, perfectly transformed into reality
         </motion.p>
+        
         <motion.div 
           className={styles.ctaContainer}
           initial={{ opacity: 0, y: 20 }}
@@ -46,16 +55,16 @@ const Hero = () => {
           <motion.a 
             href="mailto:arusoft.company@gmail.com"
             className={styles.primaryButton}
-            whileHover={{ scale: 1.05, backgroundColor: '#132B45' }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             Start Building
           </motion.a>
           <motion.a 
             href="#projects" 
             className={styles.secondaryButton}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             onClick={(e) => {
               e.preventDefault();
               scrollToSection('projects');
@@ -64,6 +73,7 @@ const Hero = () => {
             Explore Our Work
           </motion.a>
         </motion.div>
+        
         <motion.div 
           className={styles.statsContainer}
           initial={{ opacity: 0, y: 20 }}
@@ -72,7 +82,7 @@ const Hero = () => {
         >
           <motion.div 
             className={styles.statItem}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <span className={styles.statNumber}>100+</span>
@@ -80,7 +90,7 @@ const Hero = () => {
           </motion.div>
           <motion.div 
             className={styles.statItem}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <span className={styles.statNumber}>50+</span>
@@ -88,7 +98,7 @@ const Hero = () => {
           </motion.div>
           <motion.div 
             className={styles.statItem}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <span className={styles.statNumber}>5+</span>
@@ -96,6 +106,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
+      
       <motion.div 
         className={styles.heroImage}
         initial={{ opacity: 0, scale: 1.1 }}

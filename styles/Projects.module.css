@@ -112,5 +112,45 @@
 
   .projectGrid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .projectImage {
+    height: 180px;
+  }
+
+  .projectContent h4 {
+    font-size: 1.1rem;
+  }
+
+  .projectContent p {
+    font-size: 0.9rem;
+  }
+
+  .techTag {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+  .projectsSection {
+    padding: 3rem var(--spacing-sm);
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .categoryTitle {
+    font-size: 1.25rem;
+  }
+
+  .projectImage {
+    height: 160px;
+  }
+
+  .projectContent {
+    padding: var(--spacing-sm);
   }
 } 

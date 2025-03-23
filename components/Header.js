@@ -17,23 +17,27 @@ const Header = () => {
           <Image
             src="/aru.jpeg"
             alt="Aru Logo"
-            width={1}
-            height={1}
+            width={40}
+            height={40}
             priority
           />
         </Link>
         
         <button 
-          className={styles.menuButton}
+          className={`${styles.menuButton} ${isMenuOpen ? styles.active : ''}`}
           onClick={toggleMenu}
-          aria-label="Toggle menu"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
-          <span className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`} />
+          <div className={styles.menuIcon}>
+            <span className={styles.menuLine} />
+            <span className={styles.menuLine} />
+            <span className={styles.menuLine} />
+          </div>
         </button>
 
         <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ''}`}>
-          <Link href="#services" className={styles.navLink}>Services</Link>
-          <Link href="#projects" className={styles.navLink}>Projects</Link>
+          <Link href="#services" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Services</Link>
+          <Link href="#projects" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Projects</Link>
         </nav>
       </div>
     </header>
