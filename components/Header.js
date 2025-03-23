@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/Header.module.css';
 
 const Header = () => {
@@ -13,7 +14,13 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          Arusoft
+          <Image
+            src="/aru.jpeg"
+            alt="Aru Logo"
+            width={1}
+            height={1}
+            priority
+          />
         </Link>
         
         <button 
