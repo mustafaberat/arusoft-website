@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
-    return [{ source: '/privacy.html', destination: '/privacy' }];
-  },
   images: {
     remotePatterns: [
       {
