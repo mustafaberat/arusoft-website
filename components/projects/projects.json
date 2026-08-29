@@ -1,11 +1,18 @@
 {
   "mobileDevelopment": [
     {
+      "title": "Hue Hunt",
+      "description": "Find the one different color. A quick perception puzzle.",
+      "technologies": ["Android", "Flutter"],
+      "image": "/things-imgs/hue-hunt.png",
+      "url": "https://play.google.com/store/apps/details?id=com.arusoft.huehunt"
+    },
+    {
       "title": "Click Battle",
       "description": "Two or one player click game",
       "technologies": ["Android", "Flutter"],
-      "image": "https://raw.githubusercontent.com/mustafaberat/tyt-sayac-2020/master/assert/screenshot.PNG",
-      "url": "https://tyt20-sayac.now.sh/"
+      "image": "/things-imgs/clickbattle.jpg",
+      "url": "https://play.google.com/store/apps/details?id=com.arusoft.clickbattle"
     }
   ],
   "webDevelopment": [
@@ -13,7 +20,7 @@
       "title": "TYT20 Counter",
       "description": "Countdown timer for TYT exam",
       "technologies": ["React", "Next.js"],
-      "image": "https://raw.githubusercontent.com/mustafaberat/tyt-sayac-2020/master/assert/screenshot.PNG",
+      "image": "/things-imgs/tyt20-counter.png",
       "url": "https://tyt20-sayac.now.sh/"
     },
     {
