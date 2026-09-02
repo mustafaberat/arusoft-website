@@ -1,15 +1,10 @@
 /**
- * GET  /api/hue-hunt/scores  → { scores: [{ name, level }] }
- * POST /api/hue-hunt/scores  → { accepted, scores }  body: { name, level }
+ * HTTP katmanı. Method, CORS, status. İş kuralı yok.
  *
- * Flutter uygulama son can kalınca GET'i önden çeker.
+ * GET  /api/hue-hunt/scores  → { scores }
+ * POST /api/hue-hunt/scores  → { accepted, scores }  body: { name, level }
  */
-import {
-  listTop,
-  parseLevel,
-  sanitizeName,
-  submitScore,
-} from '../../../lib/hue-hunt-scores';
+import { getScores, submitScore } from './service';
 
 function cors(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -29,21 +24,18 @@ export default async function handler(req, res) {
 
   try {
     if (req.method === 'GET') {
-      const scores = await listTop();
-      return res.status(200).json({ scores });
+      return res.status(200).json({ scores: await getScores() });
     }
 
     if (req.method === 'POST') {
-      const name = sanitizeName(req.body?.name);
-      const level = parseLevel(req.body?.level);
-      if (!name) {
-        return fail(res, 400, 'invalid_name');
+      const result = await submitScore(req.body);
+      if (result.error === 'invalid_name' || result.error === 'invalid_level') {
+        return fail(res, 400, result.error);
       }
-      if (level == null) {
-        return fail(res, 400, 'invalid_level');
-      }
-      const result = await submitScore(name, level);
-      return res.status(200).json(result);
+      return res.status(200).json({
+        accepted: result.accepted,
+        scores: result.scores,
+      });
     }
 
     res.setHeader('Allow', 'GET, POST, OPTIONS');

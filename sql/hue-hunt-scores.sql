@@ -1,5 +1,4 @@
--- Hue Hunt top-5. Neon SQL editor'da bir kez çalıştırılabilir;
--- API ilk istekte CREATE TABLE IF NOT EXISTS de çalıştırır.
+-- Tablo adı Score.table (pages/api/hue-hunt/scores/model.js) ile aynı kalmalı.
 CREATE TABLE IF NOT EXISTS hue_hunt_scores (
   id SERIAL PRIMARY KEY,
   name VARCHAR(16) NOT NULL,
