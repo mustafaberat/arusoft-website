@@ -11,7 +11,7 @@ export default function Privacy() {
         <title>Privacy Policy — ARU SOFT</title>
         <meta
           name="description"
-          content="ARU SOFT privacy policy. We do not collect personal data. App preferences stay on your device."
+          content="ARU SOFT privacy policy. Scoreboard nicknames are optional; app settings stay on your device."
         />
         <link rel="icon" href="/aru.png" />
       </Head>
@@ -20,17 +20,18 @@ export default function Privacy() {
         <main className={styles.main}>
           <p className={styles.kicker}>ARU SOFT</p>
           <h1 className={styles.title}>Privacy policy</h1>
-          <p className={styles.updated}>Last updated: 29 August 2026</p>
+          <p className={styles.updated}>Last updated: 2 September 2026</p>
 
           <section className={styles.section}>
             <p>
               ARU SOFT publishes software for phones and the web. We do not
-              collect personal data. Our apps do not use accounts, ads,
-              analytics, or our own servers.
+              require accounts and we do not run ads or analytics.
             </p>
             <p>
-              We do not ask for location, contacts, photos, microphone, or
-              identity.
+              Hue Hunt may send a nickname and reached level to our
+              scoreboard if you choose to submit a top score. That data is
+              stored so other players can see the top five. We do not ask
+              for location, contacts, photos, microphone, or identity.
             </p>
             <p>
               Settings you choose in an app stay on your device. They are not
