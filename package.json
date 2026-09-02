@@ -16,6 +16,7 @@
     "review:fix": "npm-run-all clean lint:fix format && npm run build"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
     "framer-motion": "^12.5.0",
     "next": "15.5.24",
     "react": "latest",
