@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
+import SeoHead from '../components/SeoHead';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import styles from '../styles/Privacy.module.css';
@@ -7,14 +7,11 @@ import styles from '../styles/Privacy.module.css';
 export default function Privacy() {
   return (
     <>
-      <Head>
-        <title>Privacy Policy — ARU SOFT</title>
-        <meta
-          name="description"
-          content="ARU SOFT privacy policy. Scoreboard nicknames are optional; app settings stay on your device."
-        />
-        <link rel="icon" href="/aru.png" />
-      </Head>
+      <SeoHead
+        title="Privacy Policy — ARU SOFT"
+        description="ARU SOFT privacy policy. Scoreboard nicknames are optional; app settings stay on your device."
+        path="/privacy"
+      />
       <div className={styles.page}>
         <Header />
         <main className={styles.main}>

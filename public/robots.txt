@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arusoft.vercel.app/sitemap.xml
