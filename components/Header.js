@@ -16,7 +16,7 @@ const Header = () => {
         <Link href="/" className={styles.logo}>
           <Image
             src="/aru.jpeg"
-            alt="Aru Logo"
+            alt="ARU SOFT"
             width={40}
             height={40}
             priority
