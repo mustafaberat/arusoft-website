@@ -24,6 +24,13 @@
   ],
   "webDevelopment": [
     {
+      "title": "YAKITLA",
+      "description": "Compare nearby fuel prices and estimate trip fuel costs.",
+      "technologies": ["React", "Next.js"],
+      "image": "/things-imgs/yakitla.png",
+      "url": "https://yakitla.vercel.app/"
+    },
+    {
       "title": "TYT20 Counter",
       "description": "Countdown timer for TYT exam",
       "technologies": ["React", "Next.js"],

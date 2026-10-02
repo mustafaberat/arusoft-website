@@ -10,6 +10,43 @@
   text-align: center;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(1rem);
+  animation: heroReveal 0.55s ease forwards;
+}
+
+.delay1 {
+  animation-delay: 0.05s;
+}
+.delay2 {
+  animation-delay: 0.15s;
+}
+.delay3 {
+  animation-delay: 0.25s;
+}
+.delay4 {
+  animation-delay: 0.35s;
+}
+.delay5 {
+  animation-delay: 0.45s;
+}
+
+@keyframes heroReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
 .heroContent {
   width: 92%;
   max-width: 1200px;
