@@ -1,6 +1,13 @@
 {
   "mobileDevelopment": [
     {
+      "title": "Yakıtla",
+      "description": "Compare Turkey fuel prices and estimate trip fuel costs.",
+      "technologies": ["Android", "Flutter"],
+      "image": "/things-imgs/yakitla.png",
+      "url": "https://play.google.com/store/apps/details?id=com.arusoft.yakitla"
+    },
+    {
       "title": "Hue Hunt",
       "description": "Find the one different color. A quick perception puzzle.",
       "technologies": ["Android", "Flutter"],
@@ -24,7 +31,7 @@
   ],
   "webDevelopment": [
     {
-      "title": "YAKITLA",
+      "title": "Yakıtla",
       "description": "Compare nearby fuel prices and estimate trip fuel costs.",
       "technologies": ["React", "Next.js"],
       "image": "/things-imgs/yakitla.png",
