@@ -8,6 +8,13 @@
       "url": "https://play.google.com/store/apps/details?id=com.arusoft.yakitla"
     },
     {
+      "title": "Paper Hangman",
+      "description": "Classic hangman on notebook paper — unlimited rounds.",
+      "technologies": ["Android", "Flutter"],
+      "image": "/things-imgs/paper-hangman.png",
+      "url": "https://play.google.com/store/apps/details?id=com.arusoft.hangdaily"
+    },
+    {
       "title": "Hue Hunt",
       "description": "Find the one different color. A quick perception puzzle.",
       "technologies": ["Android", "Flutter"],
