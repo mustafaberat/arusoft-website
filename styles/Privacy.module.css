@@ -49,6 +49,21 @@
   text-decoration: underline;
 }
 
+.games {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.games li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.games a {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
 .section code {
   font-size: 0.9em;
 }
