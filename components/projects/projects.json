@@ -45,39 +45,11 @@
       "url": "https://yakitla.vercel.app/"
     },
     {
-      "title": "TYT20 Counter",
-      "description": "Countdown timer for TYT exam",
-      "technologies": ["React", "Next.js"],
-      "image": "/things-imgs/tyt20-counter.png",
-      "url": "https://tyt20-sayac.now.sh/"
-    },
-    {
-      "title": "Covid19",
-      "description": "COVID-19 information and tracking website",
-      "technologies": ["React", "Next.js"],
-      "image": "https://raw.githubusercontent.com/mustafaberat/covid19-website/master/src/screenshot.PNG",
-      "url": "https://coronavirus-covid19.now.sh/"
-    },
-    {
-      "title": "Calculate Average",
-      "description": "Tool for calculating averages",
-      "technologies": ["React", "Next.js"],
-      "image": "https://raw.githubusercontent.com/mustafaberat/calculate-average/refs/heads/main/assets/mainpage.png",
-      "url": "https://calculateaverage.vercel.app/"
-    },
-    {
       "title": "Hangi Ay",
       "description": "Month determination application",
       "technologies": ["React", "Next.js"],
       "image": "https://raw.githubusercontent.com/mustafaberat/hangi-ay/main/public/output.png",
       "url": "https://hangi-ay.vercel.app/"
-    },
-    {
-      "title": "WP Inst Msg",
-      "description": "WhatsApp instant messaging tool",
-      "technologies": ["React", "Next.js"],
-      "image": "https://raw.githubusercontent.com/mustafaberat/wp-instant-msg/main/public/output.png",
-      "url": "https://wp-instant-msg.vercel.app/"
     }
   ],
   "mobileApps": [
@@ -101,22 +73,6 @@
       "technologies": ["Vue.js", "JavaScript"],
       "image": "https://raw.githubusercontent.com/mustafaberat/XOX-Game-by-Vue/master/src/img/Screenshot.PNG",
       "url": "https://xox.now.sh/"
-    },
-    {
-      "title": "Piano",
-      "description": "Interactive piano application",
-      "technologies": ["JavaScript", "HTML5", "CSS3"],
-      "image": "https://raw.githubusercontent.com/mustafaberat/piano/master/public/screenshot.PNG",
-      "url": "https://piano-beta.now.sh/"
-    }
-  ],
-  "customSolutions": [
-    {
-      "title": "Binarygap JS",
-      "description": "Binary gap calculation tool",
-      "technologies": ["JavaScript"],
-      "image": "https://raw.githubusercontent.com/mustafaberat/binarygap-js/master/src/assets/screenshot.PNG",
-      "url": "https://github.com/mustafaberat/binarygap-js"
     }
   ]
-} 
+}

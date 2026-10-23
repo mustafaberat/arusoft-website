@@ -7,7 +7,6 @@ const categories = [
   { key: "mobileDevelopment", title: "Mobile Development" },
   { key: "webDevelopment", title: "Web Development" },
   { key: "mobileApps", title: "Games & Interactive Apps" },
-  { key: "customSolutions", title: "Custom Solutions" },
 ];
 
 function ProjectCard({ project, priority = false }) {
