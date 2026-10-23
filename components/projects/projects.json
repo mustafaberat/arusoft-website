@@ -1,39 +1,44 @@
 {
   "mobileDevelopment": [
     {
-      "title": "Yakıtla",
-      "description": "Compare Turkey fuel prices and estimate trip fuel costs.",
-      "technologies": ["Android", "Flutter"],
-      "image": "/things-imgs/yakitla.png",
-      "url": "https://play.google.com/store/apps/details?id=com.arusoft.yakitla"
-    },
-    {
-      "title": "Paper Hangman",
-      "description": "Classic hangman on notebook paper — unlimited rounds.",
-      "technologies": ["Android", "Flutter"],
-      "image": "/things-imgs/paper-hangman.png",
-      "url": "https://play.google.com/store/apps/details?id=com.arusoft.hangdaily"
-    },
-    {
-      "title": "Hue Hunt",
-      "description": "Find the one different color. A quick perception puzzle.",
-      "technologies": ["Android", "Flutter"],
-      "image": "/things-imgs/hue-hunt.png",
-      "url": "https://play.google.com/store/apps/details?id=com.arusoft.huehunt"
-    },
-    {
       "title": "Click Battle",
       "description": "Two or one player click game",
+      "descriptionTr": "Tek ya da iki kişilik hızlı tıklama düellosu.",
       "technologies": ["Android", "Flutter"],
       "image": "/things-imgs/clickbattle.jpg",
       "url": "https://play.google.com/store/apps/details?id=com.arusoft.clickbattle"
     },
     {
+      "title": "Hue Hunt",
+      "description": "Find the one different color. A quick perception puzzle.",
+      "descriptionTr": "Farklı olan tek rengi bul. Kısa bir algı bulmacası.",
+      "technologies": ["Android", "Flutter"],
+      "image": "/things-imgs/hue-hunt.png",
+      "url": "https://play.google.com/store/apps/details?id=com.arusoft.huehunt"
+    },
+    {
+      "title": "Paper Hangman",
+      "description": "Classic hangman on notebook paper — unlimited rounds.",
+      "descriptionTr": "Defter kâğıdında klasik adam asmaca, sınırsız tur.",
+      "technologies": ["Android", "Flutter"],
+      "image": "/things-imgs/paper-hangman.png",
+      "url": "https://play.google.com/store/apps/details?id=com.arusoft.hangdaily"
+    },
+    {
       "title": "Random Finger Picker",
       "description": "Put fingers on the screen; one is chosen at random.",
+      "descriptionTr": "Parmaklar ekrana, biri rastgele seçilir.",
       "technologies": ["Android", "Flutter"],
       "image": "/things-imgs/random-finger-picker.png",
       "url": "https://play.google.com/store/apps/details?id=com.arusoft.randomfingerpicker"
+    },
+    {
+      "title": "Yakıtla",
+      "description": "Compare Turkey fuel prices and estimate trip fuel costs.",
+      "descriptionTr": "Türkiye akaryakıt fiyatlarını karşılaştır, yol maliyetini hesapla.",
+      "technologies": ["Android", "Flutter"],
+      "image": "/things-imgs/yakitla.png",
+      "url": "https://play.google.com/store/apps/details?id=com.arusoft.yakitla"
     }
   ],
   "webDevelopment": [
