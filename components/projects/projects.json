@@ -17,6 +17,14 @@
       "url": "https://play.google.com/store/apps/details?id=com.arusoft.huehunt"
     },
     {
+      "title": "HueMind",
+      "description": "See a color, then mix it with sliders. How close can you get?",
+      "descriptionTr": "Rengi gör, çubuklarla karıştır. Ne kadar yaklaşabilirsin?",
+      "technologies": ["Android", "Flutter"],
+      "image": "/things-imgs/hue-mind.png",
+      "url": "https://play.google.com/store/apps/details?id=com.arusoft.huematch"
+    },
+    {
       "title": "Paper Hangman",
       "description": "Classic hangman on notebook paper — unlimited rounds.",
       "descriptionTr": "Defter kâğıdında klasik adam asmaca, sınırsız tur.",
@@ -31,6 +39,14 @@
       "technologies": ["Android", "Flutter"],
       "image": "/things-imgs/random-finger-picker.png",
       "url": "https://play.google.com/store/apps/details?id=com.arusoft.randomfingerpicker"
+    },
+    {
+      "title": "Reaction Rivals",
+      "description": "Two-player reflex duel on one phone. Wait for the signal, tap first.",
+      "descriptionTr": "Tek telefonda iki kişilik refleks düellosu. İşareti bekle, ilk sen bas.",
+      "technologies": ["Android", "Flutter"],
+      "image": "/things-imgs/reaction-rivals.png",
+      "url": "https://play.google.com/store/apps/details?id=com.arusoft.reactionduel"
     },
     {
       "title": "Yakıtla",
