@@ -4,6 +4,7 @@ import HomeHeader from "../components/home/HomeHeader";
 import HomeHero from "../components/home/HomeHero";
 import HomeServices from "../components/home/HomeServices";
 import HomeGames from "../components/home/HomeGames";
+import HomeWeb from "../components/home/HomeWeb";
 import HomeContact from "../components/home/HomeContact";
 import HomeFooter from "../components/home/HomeFooter";
 import styles from "../styles/Home.module.css";
@@ -38,6 +39,7 @@ export default function Home() {
             <HomeHero />
             <HomeServices />
             <HomeGames />
+            <HomeWeb />
             <HomeContact />
           </main>
           <HomeFooter />

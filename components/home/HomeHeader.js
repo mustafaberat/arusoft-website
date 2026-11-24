@@ -18,6 +18,7 @@ export default function HomeHeader() {
       <nav className={`${styles.nav} ${styles.mono}`}>
         <a href="#hizmet">Hizmetler</a>
         <a href="#oyunlar">Oyunlar</a>
+        <a href="#web">Web</a>
         <a href="#iletisim">İletişim</a>
       </nav>
     </header>

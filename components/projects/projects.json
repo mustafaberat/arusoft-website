@@ -59,6 +59,14 @@
   ],
   "webDevelopment": [
     {
+      "title": "Nerde Buluşsak",
+      "description": "Find a fair meeting spot in Istanbul for up to five friends, using the real road network.",
+      "descriptionTr": "İstanbul'da 5 kişiye kadar arkadaş için gerçek yol ağıyla en adil buluşma noktası.",
+      "technologies": ["React", "Vite"],
+      "image": "/things-imgs/nerde-bulussak.jpg",
+      "url": "https://nerde-bulussak.vercel.app"
+    },
+    {
       "title": "Yakıtla",
       "description": "Compare nearby fuel prices and estimate trip fuel costs.",
       "technologies": ["React", "Next.js"],
