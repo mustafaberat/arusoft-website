@@ -42,8 +42,8 @@ export default function Home() {
             <HomeWeb />
             <HomeContact />
           </main>
-          <HomeFooter />
         </div>
+        <HomeFooter />
       </div>
     </>
   );
