@@ -64,7 +64,9 @@
       "descriptionTr": "İstanbul'da 5 kişiye kadar arkadaş için gerçek yol ağıyla en adil buluşma noktası.",
       "technologies": ["React", "Vite"],
       "image": "/things-imgs/nerde-bulussak.jpg",
-      "url": "https://nerde-bulussak.vercel.app"
+      "url": "https://nerde-bulussak.vercel.app",
+      "cover": "/things-imgs/nerde-bulussak-map.jpg",
+      "shot": "/things-imgs/nerde-bulussak-shot.jpg"
     },
     {
       "title": "Yakıtla",

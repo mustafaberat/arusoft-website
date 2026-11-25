@@ -8,23 +8,38 @@ export default function HomeWeb() {
 
   return (
     <section id="web" className={styles.section}>
-      <div className={styles.sec}>
-        <p className={styles.mono}>03 / Web</p>
-        <div className={styles.games}>
-          {sites.map((site, index) => (
-            <a key={site.title} href={site.url} target="_blank" rel="noopener">
-              <span className={`${styles.mono} ${styles.num}`}>
+      <div className={styles.secH}>
+        <h2>Web</h2>
+        <span className={styles.secMeta}>03 / Açık sitede</span>
+      </div>
+      <div className={styles.webList}>
+        {sites.map((site, index) => (
+          <a
+            key={site.title}
+            className={styles.webcard}
+            href={site.url}
+            target="_blank"
+            rel="noopener"
+          >
+            <div className={styles.webMedia}>
+              <Image
+                src={site.shot || site.image}
+                alt=""
+                fill
+                sizes="(max-width: 800px) 100vw, 50vw"
+                style={{ objectFit: "cover", objectPosition: "center top" }}
+              />
+            </div>
+            <div className={styles.webTxt}>
+              <p className={styles.idx}>
                 {String(index + 1).padStart(2, "0")}
-              </span>
-              <div className={styles.gameTitle}>
-                <Image src={site.image} alt="" width={56} height={56} sizes="56px" />
-                <h3>{site.title}</h3>
-              </div>
+              </p>
+              <h3>{site.title}</h3>
               <p>{site.descriptionTr}</p>
-              <span className={`${styles.mono} ${styles.go}`}>Aç ↗</span>
-            </a>
-          ))}
-        </div>
+              <span className={styles.cta}>Aç ↗</span>
+            </div>
+          </a>
+        ))}
       </div>
     </section>
   );

@@ -48,7 +48,7 @@ export default function SeoHead({
       <link rel="canonical" href={canonical} />
       <link rel="icon" href="/aru.png" type="image/png" />
       <link rel="apple-touch-icon" href="/aru.png" />
-      <meta name="theme-color" content="#0a0a0a" />
+      <meta name="theme-color" content="#eef1f4" />
       <meta name="application-name" content={SITE_NAME} />
       <meta name="author" content={SITE_NAME} />
 

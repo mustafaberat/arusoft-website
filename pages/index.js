@@ -1,4 +1,4 @@
-import { Inter_Tight, JetBrains_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, IBM_Plex_Mono } from "next/font/google";
 import SeoHead from "../components/SeoHead";
 import HomeHeader from "../components/home/HomeHeader";
 import HomeHero from "../components/home/HomeHero";
@@ -9,18 +9,18 @@ import HomeContact from "../components/home/HomeContact";
 import HomeFooter from "../components/home/HomeFooter";
 import styles from "../styles/Home.module.css";
 
-const interTight = Inter_Tight({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-inter-tight",
+  variable: "--font-jakarta",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const plexMono = IBM_Plex_Mono({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500"],
   display: "swap",
-  variable: "--font-jetbrains-mono",
+  variable: "--font-plex-mono",
 });
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
         description="Hazır kalıplara sığmayan işler için web, mobil ve size özel yazılım. Fikrinizi dinliyoruz, birlikte sade ve çalışan bir ürüne dönüştürüyoruz."
       />
       <div
-        className={`${styles.home} ${interTight.className} ${interTight.variable} ${jetbrainsMono.variable}`}
+        className={`${styles.home} ${jakarta.className} ${jakarta.variable} ${plexMono.variable}`}
       >
         <div className={styles.wrap}>
           <HomeHeader />

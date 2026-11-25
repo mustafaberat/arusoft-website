@@ -23,17 +23,18 @@ const services = [
 export default function HomeServices() {
   return (
     <section id="hizmet" className={styles.section}>
-      <div className={styles.sec}>
-        <p className={styles.mono}>01 / Ne yapıyoruz</p>
-        <div className={styles.list}>
-          {services.map((service) => (
-            <div key={service.letter}>
-              <span className={styles.mono}>{service.letter}</span>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
+      <div className={styles.secH}>
+        <h2>Ne yapıyoruz</h2>
+        <span className={styles.secMeta}>01 / Hizmetler</span>
+      </div>
+      <div className={styles.services}>
+        {services.map((service) => (
+          <article key={service.letter}>
+            <span className={styles.idx}>{service.letter}</span>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+          </article>
+        ))}
       </div>
     </section>
   );
