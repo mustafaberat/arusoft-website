@@ -69,6 +69,15 @@
       "shot": "/things-imgs/nerde-bulussak-shot.jpg"
     },
     {
+      "title": "ilkdates",
+      "description": "Save your first dates on a calendar and track days passed and upcoming anniversaries.",
+      "descriptionTr": "Hayatınızdaki ilk tarihleri takvime kaydedin, geçen günleri ve yıl dönümlerini takip edin.",
+      "technologies": ["React", "Next.js"],
+      "image": "/things-imgs/ilkdates.png",
+      "url": "https://ilkdates.vercel.app",
+      "shot": "/things-imgs/ilkdates-shot.jpg"
+    },
+    {
       "title": "Yakıtla",
       "description": "Compare nearby fuel prices and estimate trip fuel costs.",
       "technologies": ["React", "Next.js"],
